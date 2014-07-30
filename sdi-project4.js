@@ -40,7 +40,7 @@ var emailPattern = function(email) {
 
 console.log(emailPattern("bperkins99@fullsail.edu"));
 
-*/
+
 // Is the string a URL? (Does it start with http: or https:)
 var checkUrl = function(webPage){
 	var addBar = webPage;
@@ -54,7 +54,7 @@ var checkUrl = function(webPage){
 
 console.log(checkUrl("https://github.com/BradPerkins/sdi-project4"));
 
-
+*/
 
 
 
@@ -82,7 +82,19 @@ var capFirst = function(string) {
 
 console.log(capFirst("each of the first letters in each word here should get capitalized"));
 
+
 */
+
+
+
+//Format a number to use a specific number of decimal places, as for money: 2.1 → 2.10
+var decimal = function(money){
+	var dollars = money;
+	return (dollars.toFixed(2));
+
+};
+console.log(decimal(2.1));
+
 
 
 
