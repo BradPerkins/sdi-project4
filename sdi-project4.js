@@ -27,7 +27,7 @@ console.log(phoneNumber("222-222-222"));
 
 // index of @ has to be before . 
 
-
+/*
 var emailPattern = function(email) {
 	var newEmail = email;
 	if (email.indexOf("@") > 0 && email.indexOf("@") < email.indexOf(".") && email.indexOf(".") > email.indexOf("@")){
@@ -39,6 +39,50 @@ var emailPattern = function(email) {
 };
 
 console.log(emailPattern("bperkins99@fullsail.edu"));
+
+*/
+// Is the string a URL? (Does it start with http: or https:)
+var checkUrl = function(webPage){
+	var addBar = webPage;
+	if (addBar.match("http:") || addBar.match("https:")) {
+		return ("This is a proper URL.");
+	}
+	else {
+		return ("This is not a proper URL");
+	}
+};
+
+console.log(checkUrl("https://github.com/BradPerkins/sdi-project4"));
+
+
+
+
+
+
+
+
+
+//needs finished still
+
+/*
+// Title-case a string(split into words, then uppercase the first letter of each word)
+// toUpperCase each word after " " using .split
+// upper case 0 index of each word in a string.
+// for loop
+
+var capFirst = function(string) {
+	var cap = string;
+	var wordSplit = cap.split(" ");
+	for (var i = 0; i < wordSplit.length; i++) {
+		wordSplit[i]
+	};
+
+
+};
+
+console.log(capFirst("each of the first letters in each word here should get capitalized"));
+
+*/
 
 
 
