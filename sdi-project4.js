@@ -83,7 +83,7 @@ var capFirst = function(string) {
 console.log(capFirst("each of the first letters in each word here should get capitalized"));
 
 
-*/
+
 
 
 
@@ -94,7 +94,15 @@ var decimal = function(money){
 
 };
 console.log(decimal(2.1));
+*/
 
+// Convert string to a number.
+var stringToNumber = function(convertMe) {
+	var numWord = convertMe;
+	return (parseFloat(numWord));
+
+};
+console.log(stringToNumber("1407"));
 
 
 
