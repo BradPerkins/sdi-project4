@@ -3,41 +3,34 @@
 // SDI 1407
 // 07-29-2014
 
-/*
+
 // Does String follow a 123-456-7890 pattern like a phone number?
 
 var phoneNumber = function(number) {
 	var newNum = number;
 	var originalNumber = "123-456-7890";
 	if (number.charAt(3) === "-" && number.charAt(7) === "-" && number.length === originalNumber.length) {
-		return (newNum + " is a real phone number");
+		return true;
 	}
 	else {
-		return ( newNum + " is not a real phone number");
+		return false;
 	}
 };
-
-
 console.log(phoneNumber("222-222-222"));
-
-*/
 
 
 // Does a string follow an aaa@bbb.ccc pattern like an email address?
-
 // index of @ has to be before . 
 
-/*
 var emailPattern = function(email) {
 	var newEmail = email;
 	if (email.indexOf("@") > 0 && email.indexOf("@") < email.indexOf(".") && email.indexOf(".") > email.indexOf("@")){
-		return (newEmail + " is in the right email format");
+		return true;
 	}
 	else {
-		return ( newEmail + " is not in the right email format");
+		return false;
 	}
 };
-
 console.log(emailPattern("bperkins99@fullsail.edu"));
 
 
@@ -45,56 +38,24 @@ console.log(emailPattern("bperkins99@fullsail.edu"));
 var checkUrl = function(webPage){
 	var addBar = webPage;
 	if (addBar.match("http:") || addBar.match("https:")) {
-		return ("This is a proper URL.");
+		return true;
 	}
 	else {
-		return ("This is not a proper URL");
+		return false;
 	}
 };
-
 console.log(checkUrl("https://github.com/BradPerkins/sdi-project4"));
-
-*/
-
-
-
-
-
-
-
-//needs finished still
-
-/*
-// Title-case a string(split into words, then uppercase the first letter of each word)
-// toUpperCase each word after " " using .split
-// upper case 0 index of each word in a string.
-// for loop
-
-var capFirst = function(string) {
-	var cap = string;
-	var wordSplit = cap.split(" ");
-	for (var i = 0; i < wordSplit.length; i++) {
-		wordSplit[i]
-	};
-
-
-};
-
-console.log(capFirst("each of the first letters in each word here should get capitalized"));
-
-
-
-
 
 
 //Format a number to use a specific number of decimal places, as for money: 2.1 → 2.10
-var decimal = function(money){
-	var dollars = money;
-	return (dollars.toFixed(2));
+var decimal = function(pi, dec){
+	var piNum = pi;
+	var decLoc = dec;
+	return (piNum.toFixed(decLoc));
 
 };
-console.log(decimal(2.1));
-*/
+console.log(decimal(3.14159, 3));
+
 
 // Convert string to a number.
 var stringToNumber = function(convertMe) {
@@ -103,6 +64,12 @@ var stringToNumber = function(convertMe) {
 
 };
 console.log(stringToNumber("1407"));
+
+
+// Find the smallest value in an array that is greater than a givin number.
+//var SmallestNum = function(num){
+
+
 
 
 
