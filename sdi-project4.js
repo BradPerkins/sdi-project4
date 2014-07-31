@@ -5,7 +5,6 @@
 
 
 // Does String follow a 123-456-7890 pattern like a phone number?
-
 var phoneNumber = function(number) {
 	var newNum = number;
 	var originalNumber = "123-456-7890";
@@ -16,12 +15,8 @@ var phoneNumber = function(number) {
 		return false;
 	}
 };
-console.log(phoneNumber("222-222-222"));
-
 
 // Does a string follow an aaa@bbb.ccc pattern like an email address?
-// index of @ has to be before . 
-
 var emailPattern = function(email) {
 	var newEmail = email;
 	if (email.indexOf("@") > 0 && email.indexOf("@") < email.indexOf(".") && email.indexOf(".") > email.indexOf("@")){
@@ -31,8 +26,6 @@ var emailPattern = function(email) {
 		return false;
 	}
 };
-console.log(emailPattern("bperkins99@fullsail.edu"));
-
 
 // Is the string a URL? (Does it start with http: or https:)
 var checkUrl = function(webPage){
@@ -44,8 +37,6 @@ var checkUrl = function(webPage){
 		return false;
 	}
 };
-console.log(checkUrl("https://github.com/BradPerkins/sdi-project4"));
-
 
 //Format a number to use a specific number of decimal places, as for money: 2.1 → 2.10
 var decimal = function(pi, dec){
@@ -54,8 +45,6 @@ var decimal = function(pi, dec){
 	return (piNum.toFixed(decLoc));
 
 };
-console.log(decimal(3.14159, 3));
-
 
 // Convert string to a number.
 var stringToNumber = function(convertMe) {
@@ -63,37 +52,36 @@ var stringToNumber = function(convertMe) {
 	return (parseFloat(numWord));
 
 };
+
+// Add all numbers in an array together.
+var arrayFun = function(theArray){
+	var sumOf = 0;
+	for (var i = 0; i < theArray.length; i++){
+		sumOf += theArray[i];
+	}
+	return sumOf;
+};
+
+
+//console.Log outputs of each function.
+
+// Phone Number Pattern
+console.log(phoneNumber("222-222-2222"));
+
+//Email Pattern
+console.log(emailPattern("bperkins99@fullsail.edu"));
+
+//URL check 
+console.log(checkUrl("https://github.com/BradPerkins/sdi-project4"));
+
+//Decimal Place
+console.log(decimal(3.14159, 3));
+
+//String to number
 console.log(stringToNumber("1407"));
 
-
-// Find the smallest value in an array that is greater than a givin number.
-//var SmallestNum = function(num){
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Add array number together
+console.log (arrayFun([1,2,3,4]));
 
 
 
